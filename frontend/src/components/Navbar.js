@@ -14,6 +14,11 @@ function Navbar() {
         <Link to="/about" className='mr-4'> About Us</Link>
       </div>
       <div>
+        <Link to="/Event1"> Event1 </Link>
+        <Link to="/Event2"> Event2 </Link>
+      
+      </div>
+      <div>
         <Link to="/login" className="mr-4">
           Login
         </Link>
