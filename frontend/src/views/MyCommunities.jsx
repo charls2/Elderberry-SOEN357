@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import FloatingHelpWidget from "../components/Help";
 
 const MyCommunities = () => {
   const navigate = useNavigate();
@@ -54,6 +55,9 @@ const MyCommunities = () => {
           </div>
         ))}
       </div>
+        
+        {/* Help Widget */}
+        <FloatingHelpWidget />
     </div>
   );
 };
