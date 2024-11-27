@@ -14,8 +14,8 @@ const EventNavbar = () => (
 
 const styles = {
   navbar: {
-    backgroundColor: '#333',
-    color: '#fff',
+    backgroundColor: '#0',
+    color: '#FF8D7O',
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',

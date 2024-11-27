@@ -1,9 +1,9 @@
 import React from 'react';
-import NewNavbar from '../components/NewNavbar';
+import Navbar from '../components/Navbar';
 
 const EventDetails = () => (
   <div style={styles.page}>
-    <NewNavbar />
+    <Navbar />
     <div style={styles.container}>
       {/* Hero Section */}
       <section style={styles.hero}>
