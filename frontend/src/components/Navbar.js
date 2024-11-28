@@ -3,13 +3,16 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav class="bg-tomato p-4 text-white flex justify-between fixed top-0 w-full">
+    <nav class="bg-customLiteBlue p-4 text-black flex justify-between w-full top-0">
       <div>
         <Link to="/" class="mr-4">
-          Landing
+          Welcome
         </Link>
         <Link to="/home" class="mr-4">
           Home
+        </Link>
+        <Link to="/browse">
+          Browse
         </Link>
       </div>
       <div>
