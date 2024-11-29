@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from "../components/Navbar";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -22,7 +23,9 @@ function ContactUs() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <>
+    <Navbar />
+    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-12">
       <h1 className="text-3xl font-bold text-center mb-6">Contact Us</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
@@ -71,15 +74,13 @@ function ContactUs() {
         </div>
 
         <div className="text-center">
-          <button
-            type="submit"
-            className="px-6 py-3 bg-purple-500 text-white font-bold rounded-md hover:bg-purple-600 transition"
-          >
+          <button type="submit" className="px-6 py-3 bg-customBlue text-white font-bold rounded-md hover:bg-customLiteBlue transition">
             Submit
           </button>
         </div>
       </form>
     </div>
+    </>
   );
 }
 
