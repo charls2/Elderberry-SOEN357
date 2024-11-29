@@ -47,13 +47,13 @@ const FloatingHelpWidget = () => {
             <div className="flex gap-2">
               <button 
                 onClick={toggleMinimize}
-                className="text-white hover:text-gray-200 transition-colors"
+                className="text-black hover:text-blue-500 transition-colors"
               >
                 <Minus size={20} />
               </button>
               <button 
                 onClick={toggleChat}
-                className="text-white hover:text-gray-200 transition-colors"
+                className="text-black hover:text-red-500 transition-colors"
               >
                 <X size={20} />
               </button>
@@ -91,7 +91,7 @@ const FloatingHelpWidget = () => {
                   value={inputText}
                   onChange={(e) => setInputText(e.target.value)}
                   placeholder="Type your message..."
-                  className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-elderBrown"
+                  className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-customLiteBlue"
                 />
                 <button
                   type="submit"
@@ -110,7 +110,7 @@ const FloatingHelpWidget = () => {
         <button
           onClick={toggleChat}
           onTouchMove={toggleChat}
-          className="bg-elderBerry text-white p-4 rounded-full shadow-lg hover:bg-elderBrown transition-colors"
+          className="bg-customLiteBlue text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-colors"
         >
           <MessageCircle size={24} />
         </button>

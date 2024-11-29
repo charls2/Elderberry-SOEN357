@@ -21,7 +21,7 @@ function Navbar() {
           <Link
             key={item}
             to={`/${item.toLowerCase().replace(" us", "")}`}
-            className="px-4 py-2 bg-elderBeige rounded-md hover:bg-purple-300 transition"
+            className="px-4 py-2 bg-white rounded-md hover:bg-tan font-semibold transition"
           >
             {item}
           </Link>
