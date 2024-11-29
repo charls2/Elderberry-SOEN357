@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Navbar() {
+function Navbar({styles}) {
   return (
-    <nav class="bg-customLiteBlue p-4 text-black flex justify-between w-full top-0">
+    <nav class={`bg-customLiteBlue p-4 text-black flex justify-between w-full top-0 ${styles}`}>
       <div>
         <Link to="/" class="mr-4">
           Welcome

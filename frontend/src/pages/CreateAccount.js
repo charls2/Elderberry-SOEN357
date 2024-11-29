@@ -1,10 +1,10 @@
-import favicon from "../assets/blue-berry-new.png"; // Adjust the path as per your folder structure
+import favicon from "../assets/blue-berry-new.png";
 import Navbar from "../components/Navbar";
 
 function CreateAccount() {
     return (
         <>
-        <Navbar />
+        <Navbar styles="fixed" />
         <div class="flex min-h-screen">
             {/* Left Section */}
             <div class="w-1/2 flex justify-center items-center bg-customWhite min-h-screen">

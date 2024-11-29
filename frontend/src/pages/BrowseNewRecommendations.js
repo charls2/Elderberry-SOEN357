@@ -22,18 +22,12 @@ function BrowseNewRecommendations() {
             <div className="bg-customLiteBlue p-4 w-full md:w-1/4">
                 {/* Search Bar */}
                 <div className="mb-6">
-                    <input
-                    type="text"
-                    placeholder="Search"
-                    className="bg-white w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-300"
-                    />
+                    <input type="text" placeholder="Search" className="bg-white w-full px-4 py-2 border 
+                        border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-purple-300" />
                 </div>
                 <ul className="space-y-2">
                     {["Cooking", "Life Lessons", "Someone to talk to", "Sports", "Financial Advice"].map((item, index) => (
-                    <li
-                        key={index}
-                        className="p-2 rounded hover:bg-purple-100 cursor-pointer text-black"
-                    >
+                    <li key={index} className="p-2 rounded hover:bg-purple-100 cursor-pointer text-black">
                         {item}
                     </li>
                     ))}

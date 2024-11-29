@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Carousel from '../components/Carousel';
+import Navbar from '../components/Navbar';
 
 function Welcome() {
 
@@ -27,6 +28,7 @@ function Welcome() {
     <>
       {/* Main Container */}
       <div class="bg-white h-screen flex flex-col items-center">
+        <Navbar styles="fixed" />
         {/* Header Section */}
         <div class="bg-customLiteBlue w-full py-12 text-center">
           <h1 class="text-4xl font-bold text-black">Welcome to Elderberry</h1>
