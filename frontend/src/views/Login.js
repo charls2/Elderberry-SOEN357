@@ -39,11 +39,12 @@ function Login() {
               </div>
 
               {/* Login Button */}
-              <div class="flex justify-center items-center">
-                  <button type="submit" class="bg-customBlue text-white 
-                      py-2 px-6 rounded font-bold hover:shadow-md">
-                      Login
-                  </button>
+              <div class="flex flex-col justify-center items-center space-y-4">
+                <a href="/register" class="text-center">Don't have an account?</a>
+                <button type="submit" class="bg-customBlue text-white 
+                    py-2 px-6 rounded font-bold hover:shadow-md">
+                    Login
+                </button>
               </div>
             </form>
           </div>

@@ -2,8 +2,12 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './views/Login';
 import Home from './views/Home';
 import Welcome from './pages/welcome_page';
-import CreateAccount from './pages/CreateAccount';
+import Register from './pages/Register';
 import BrowseNewRecommendations from './pages/BrowseNewRecommendations';
+import EditPreferences from './views/EditPreferences';
+import MyCommunities from './views/MyCommunities.jsx';
+import ContactUs from './views/ContactUs.jsx';
+import Community from './pages/Community.js';
 
 function App() {
   return (
@@ -12,9 +16,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<CreateAccount />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/preferences" element={<EditPreferences />} />
+        <Route path="/communities" element={<MyCommunities />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="/browse" element={<BrowseNewRecommendations />} />
+        <Route path='/communities/:id' element={<Community />} />
         <Route
           path="*"
           element={

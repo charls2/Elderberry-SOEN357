@@ -39,7 +39,7 @@ function Carousel({items}) {
             {/* Left Arrow */}
             <button
                 onClick={() => handleArrowClick("left")}
-                class="bg-customBlue items-center justify-center rounded-full shadow-lg hover:scale-110">
+                class="border border-customLiteBlue items-center justify-center rounded-full shadow-lg hover:scale-110">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50"
@@ -50,7 +50,7 @@ function Carousel({items}) {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    class="text-white">
+                    class="text-black">
                     <line x1="19" y1="12" x2="5" y2="12" />
                     <polyline points="12 19 5 12 12 5" />
                 </svg>
@@ -80,7 +80,7 @@ function Carousel({items}) {
             {/* Right Arrow */}
             <button
             onClick={() => handleArrowClick("right")}
-            class="bg-customBlue items-center justify-center rounded-full shadow-lg hover:scale-110">
+            class="border border-customLiteBlue items-center justify-center rounded-full shadow-lg hover:scale-110">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50"
@@ -91,7 +91,7 @@ function Carousel({items}) {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    class="text-white">
+                    class="text-black">
                     <line x1="5" y1="12" x2="19" y2="12" />
                     <polyline points="12 5 19 12 12 19" />
                 </svg>

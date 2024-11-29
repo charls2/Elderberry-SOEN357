@@ -3,15 +3,15 @@ import placeholder from "../assets/placeholder_community.jpg"; // Adjust the pat
 import Navbar from "../components/Navbar";
 
 function BrowseNewRecommendations() {
-  const cards = [
-    { title: "Cooking Community", description: "Learn more about our mission and values.", posted: "Nov 12, 2024", goTo: "/communities/cooking" },
-    { title: "Life Lessons Community", description: "Learn more about our mission and values.", posted: "Oct 22, 2024", goTo: "/communities/life-lessons" },
-    { title: "Sports Community", description: "Reach out to our team for assistance.", posted: "Nov 15, 2024", goTo: "/communities/sports" },
-    { title: "Financial Community", description: "Financial tips and resources.", posted: "Nov 18, 2024", goTo: "/communities/financial" },
-    { title: "Social Skills Community", description: "Improve your social skills with us.", posted: "Nov 20, 2024", goTo: "/communities/social-skills" },
-    { title: "Botanical Community", description: "Explore botanical wonders.", posted: "Nov 22, 2024", goTo: "/communities/botanical" },
-    { title: "Therapy Community", description: "Find support and guidance.", posted: "Nov 25, 2024", goTo: "/communities/therapy" },
-  ];
+    const cards = [
+        { id: 1, name: "Cooking Community", description: "Learn more about our mission and values.", posted: "Nov 12, 2024", goTo: "/communities/1", members: 120 },
+        { id: 2, name: "Life Lessons Community", description: "Learn more about our mission and values.", posted: "Oct 22, 2024", goTo: "/communities/2", members: 80 },
+        { id: 3, name: "Sports Community", description: "Reach out to our team for assistance.", posted: "Nov 15, 2024", goTo: "/communities/3", members: 65 },
+        { id: 4, name: "Financial Community", description: "Financial tips and resources.", posted: "Nov 18, 2024", goTo: "/communities/4", members: 85 },
+        { id: 5, name: "Social Skills Community", description: "Improve your social skills with us.", posted: "Nov 20, 2024", goTo: "/communities/5", members: 162 },
+        { id: 6, name: "Botanical Community", description: "Explore botanical wonders.", posted: "Nov 22, 2024", goTo: "/communities/6", members: 51 },
+        { id: 7, name: "Therapy Community", description: "Find support and guidance.", posted: "Nov 25, 2024", goTo: "/communities/7", members: 46 },
+    ];
 
   return (
     <div className="flex flex-col min-h-screen bg-white overflow-auto">
@@ -49,15 +49,14 @@ function BrowseNewRecommendations() {
                         />
                         {/* Content */}
                         <div className="p-4">
-                            <h2 className="text-xl font-semibold text-gray-800">{card.title}</h2>
+                            <h2 className="text-xl font-semibold text-gray-800">{card.name}</h2>
                             <p className="text-gray-600 mt-2">{card.description}</p>
+                            <p class="text-gray-600">Members: <span class="text-green-600">{card.members}</span></p>
                             <div className="flex items-center justify-between mt-4">
                                 <span className="text-sm text-gray-500">Posted on: {card.posted}</span>
-                                <button
-                                onClick={() => (card.goTo ? (window.location.href = card.goTo) : null)}
-                                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none"
-                                >
-                                Read More
+                                <button onClick={() => (card.goTo ? (window.location.href = card.goTo) : null)}
+                                    className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none">
+                                    Read More
                                 </button>
                             </div>
                         </div>

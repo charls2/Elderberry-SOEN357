@@ -30,7 +30,7 @@ function Welcome() {
       <div class="bg-white h-screen flex flex-col items-center">
         <Navbar styles="fixed" />
         {/* Header Section */}
-        <div class="bg-customLiteBlue w-full py-12 text-center">
+        <div class="bg-customLiteBlue w-full pt-24 pb-10 text-center">
           <h1 class="text-4xl font-bold text-black">Welcome to Elderberry</h1>
           <p class="text-lg font-medium text-black mt-2">
             Bridging Generations, one connection at a time
@@ -40,29 +40,30 @@ function Welcome() {
           </button>
         </div>
 
-      
-        {/* Render Activities Dynamically */}
-        <div class="w-full text-center pt-24">
-          <h2 class="text-2xl font-bold text-black">
-              Activities Currently Offered
-          </h2>
-          {<Carousel items={activities} />}
-        </div>
+        <div class="justify-center items-center">
+          {/* Render Activities */}
+          <div class="w-full text-center mt-10">
+            <h2 class="text-2xl font-bold text-black">
+                Activities Currently Offered
+            </h2>
+            {<Carousel items={activities} />}
+          </div>
 
-        {/* Activities Section */}
-        <div class="w-full text-center">
-          <h2 class="text-2xl font-bold text-black">
-            Misc
-          </h2>
+          {/* Activities Section */}
+          <div class="w-full text-center">
+            <h2 class="text-2xl font-bold text-black">
+              Misc
+            </h2>
 
-          {/* Render Activities Dynamically */}
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
-            {pages.map((activity, index) => (
-              <div key={index} class="bg-customLiteBlue p-6 text-black rounded-lg shadow-lg">
-                <h3 class="font-semibold text-lg">{activity.title}</h3>
-                <p class="text-sm mt-2">{activity.description}</p>
-              </div>
-            ))}
+            {/* Render Activities */}
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              {pages.map((activity, index) => (
+                <div key={index} class="bg-customLiteBlue p-6 text-black rounded-lg shadow-lg">
+                  <h3 class="font-semibold text-lg">{activity.title}</h3>
+                  <p class="text-sm mt-2">{activity.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

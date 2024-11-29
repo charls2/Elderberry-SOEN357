@@ -1,7 +1,7 @@
 import favicon from "../assets/blue-berry-new.png";
 import Navbar from "../components/Navbar";
 
-function CreateAccount() {
+function Register() {
     return (
         <>
         <Navbar styles="fixed" />
@@ -68,10 +68,11 @@ function CreateAccount() {
                         </div>
 
                         {/* Sign Up Button */}
-                        <div class="flex justify-center items-center">
+                        <div class="flex flex-col justify-center items-center space-y-4">
+                            <a href="/login">Have an account?</a>
                             <button type="submit" class="bg-customBlue text-white 
                                 py-2 px-6 rounded font-bold hover:shadow-md">
-                                Sign Up
+                                Login
                             </button>
                         </div>
                     </form>
@@ -90,4 +91,4 @@ function CreateAccount() {
     );
 }
 
-export default CreateAccount;
+export default Register;
