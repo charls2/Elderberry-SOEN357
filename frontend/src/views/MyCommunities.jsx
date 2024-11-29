@@ -35,8 +35,8 @@ const MyCommunities = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       {/* Navbar */}
-      <div className="bg-blue-600 text-white p-4 shadow-md">
-        <h1 className="text-lg font-semibold">My Communities</h1>
+      <div className="bg-elderBerry text-black p-4 shadow-md" >
+        <h1 className="text-lg font-semibold text-center ">My Communities</h1>
       </div>
 
       {/* Community Cards */}

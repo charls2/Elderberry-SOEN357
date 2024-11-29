@@ -73,7 +73,7 @@ function ContactUs() {
         <div className="text-center">
           <button
             type="submit"
-            className="px-6 py-3 bg-purple-500 text-white font-bold rounded-md hover:bg-purple-600 transition"
+            className="px-6 py-3 bg-elderGreen text-white font-bold rounded-md hover:bg-purple-600 transition"
           >
             Submit
           </button>

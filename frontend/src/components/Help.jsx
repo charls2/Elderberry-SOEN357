@@ -42,7 +42,7 @@ const FloatingHelpWidget = () => {
           ${isMinimized ? 'h-14' : 'h-96'} w-80 flex flex-col`}>
           
           {/* Header */}
-          <div className="bg-blue-600 p-4 flex justify-between items-center">
+          <div className="bg-elderBrown p-4 flex justify-between items-center">
             <h3 className="text-white font-semibold">Help & Support</h3>
             <div className="flex gap-2">
               <button 
@@ -91,7 +91,7 @@ const FloatingHelpWidget = () => {
                   value={inputText}
                   onChange={(e) => setInputText(e.target.value)}
                   placeholder="Type your message..."
-                  className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  className="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-elderBrown"
                 />
                 <button
                   type="submit"
@@ -109,7 +109,8 @@ const FloatingHelpWidget = () => {
       {!isOpen && (
         <button
           onClick={toggleChat}
-          className="bg-blue-600 text-white p-4 rounded-full shadow-lg hover:bg-blue-700 transition-colors"
+          onTouchMove={toggleChat}
+          className="bg-elderBerry text-white p-4 rounded-full shadow-lg hover:bg-elderBrown transition-colors"
         >
           <MessageCircle size={24} />
         </button>

@@ -7,6 +7,9 @@ import Navbar from './components/Navbar';
 import EditPreferences from './views/EditPreferences';
 import MyCommunities from './views/MyCommunities.jsx';
 import ContactUs from './views/ContactUs.jsx';
+import CommunityPage from './components/CommunityPage.jsx';
+import MentorshipPage from './views/MentorshipPage.jsx';
+import EventDetailPage from './views/EventDetailPage.jsx';
 
 function App() {
   return (
@@ -20,6 +23,9 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/preferences" element={<EditPreferences />} />
           <Route path="/communities" element={<MyCommunities />} />
+          <Route path="/community/:id" element={<CommunityPage />} />
+          <Route path="/Mentorship" element={<MentorshipPage />} />
+          <Route path="/events" element={<EventDetailPage />} />
           <Route path="/contact" element={<ContactUs />} />
 
           <Route
