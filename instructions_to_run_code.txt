@@ -1,0 +1,9 @@
+1. In terminal go to desired directory
+
+2. git clone https://github.com/charls2/Elderberry-SOEN357.git
+
+3. cd into the frontend folder
+
+4. In terminal, 'npm start'
+
+5. To stop, press 'ctrl + c', then type 'y' then press enter.
