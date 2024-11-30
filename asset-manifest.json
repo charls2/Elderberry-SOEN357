@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Elderberry-SOEN357/static/css/main.f93c70ec.css",
-    "main.js": "/Elderberry-SOEN357/static/js/main.d24ef41a.js",
-    "static/js/453.263a6bc6.chunk.js": "/Elderberry-SOEN357/static/js/453.263a6bc6.chunk.js",
-    "static/media/placeholder_community.jpg": "/Elderberry-SOEN357/static/media/placeholder_community.348c9ef9af2a149afb23.jpg",
-    "static/media/avatar.png": "/Elderberry-SOEN357/static/media/avatar.8f8c25235713f2b3a103.png",
-    "index.html": "/Elderberry-SOEN357/index.html",
-    "main.f93c70ec.css.map": "/Elderberry-SOEN357/static/css/main.f93c70ec.css.map",
-    "main.d24ef41a.js.map": "/Elderberry-SOEN357/static/js/main.d24ef41a.js.map",
-    "453.263a6bc6.chunk.js.map": "/Elderberry-SOEN357/static/js/453.263a6bc6.chunk.js.map"
+    "main.css": "/Elderberry-SOEN357/frontend/static/css/main.f93c70ec.css",
+    "main.js": "/Elderberry-SOEN357/frontend/static/js/main.8288c00b.js",
+    "static/js/453.263a6bc6.chunk.js": "/Elderberry-SOEN357/frontend/static/js/453.263a6bc6.chunk.js",
+    "static/media/placeholder_community.jpg": "/Elderberry-SOEN357/frontend/static/media/placeholder_community.348c9ef9af2a149afb23.jpg",
+    "static/media/avatar.png": "/Elderberry-SOEN357/frontend/static/media/avatar.8f8c25235713f2b3a103.png",
+    "index.html": "/Elderberry-SOEN357/frontend/index.html",
+    "main.f93c70ec.css.map": "/Elderberry-SOEN357/frontend/static/css/main.f93c70ec.css.map",
+    "main.8288c00b.js.map": "/Elderberry-SOEN357/frontend/static/js/main.8288c00b.js.map",
+    "453.263a6bc6.chunk.js.map": "/Elderberry-SOEN357/frontend/static/js/453.263a6bc6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f93c70ec.css",
-    "static/js/main.d24ef41a.js"
+    "static/js/main.8288c00b.js"
   ]
 }
